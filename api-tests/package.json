@@ -1,0 +1,31 @@
+{
+  "name": "pw-dummyjson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "build:k6": "esbuild performance-tests/test.ts --bundle --outfile=dist/test.bundle.js --external:k6 --external:k6/*",
+    "test:k6": "k6 run dist/test.bundle.js",
+    "k6": "dotenv -- k6 run "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@playwright/test": "^1.49.0",
+    "@types/k6": "^0.54.2",
+    "@types/node": "^22.9.3",
+    "babel-loader": "^9.2.1",
+    "dotenv-cli": "^7.4.4",
+    "esbuild": "^0.24.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

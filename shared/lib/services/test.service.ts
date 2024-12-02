@@ -1,13 +1,13 @@
 // services/test.service.ts
 
-import { PlaywrightApiClient } from '../clients/playwright-api';
-import { TestResponse } from '../models/Test';
+import { ApiClient } from '../clients/api-client';
+import { TestResponse } from '../models/test';
 
 export class TestService {
-  private apiClient: PlaywrightApiClient;
+  private apiClient: ApiClient;
   private endpoint: string = '/test';
 
-  constructor(apiClient: PlaywrightApiClient) {
+  constructor(apiClient: ApiClient) {
     this.apiClient = apiClient;
   }
 

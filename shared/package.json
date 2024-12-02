@@ -1,9 +1,10 @@
 {
-  "name": "pw-dummyjson",
+  "name": "shared",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +12,6 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.49.0",
-    "@types/node": "^22.9.3"
+    "typescript": "^5.7.2"
   }
 }

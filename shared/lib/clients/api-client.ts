@@ -7,7 +7,7 @@ export abstract class ApiClient {
     this.baseUrl = baseUrl;
   }
 
-  protected abstract request<T>(
+  public abstract request<T>(
     method: string,
     endpoint: string,
     data?: any,

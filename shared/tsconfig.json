@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@shared/*": ["lib/*"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["./lib/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

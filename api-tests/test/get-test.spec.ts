@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { PlaywrightApiClient } from '../lib/clients/playwright-api';
-import { TestService } from '../lib/services/test.service';
+import { PlaywrightApiClient } from '../../shared/lib/clients/playwright-api';
+import { TestService } from '../../shared/lib/services/test.service';
 
 test.describe('/test endpoint', () => {
   let testService: TestService;
